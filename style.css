@@ -1,1 +1,5 @@
-
+.menu {
+  	overflow: hidden;
+  	position: relative;
+	display: none;
+	}
