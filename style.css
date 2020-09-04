@@ -1,5 +1,21 @@
+/*Homepage*/
+
+.header {
+	max-width: 960px;
+	justify-content: center;
+	}
+
+.logomenu {
+	border: 0;
+	}
+
+.homelogo {
+    padding-bottom: 0;
+}
+
 .menu {
-  	overflow: hidden;
-  	position: relative;
-	
+	display: block !important;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
 	}
