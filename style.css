@@ -1,12 +1,14 @@
 /*Homepage*/
 
 .header {
-	max-width: 960px;
-	justify-content: center;
+	
+
+
+
 	}
 
 .logomenu {
-	border: 0;
+
 	}
 
 .homelogo {
@@ -14,10 +16,11 @@
 }
 
 .menu {
-	display: block !important;
+	padding-top: -1px ;
+	padding: -1px;
     text-align: center;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
 		width: 70%;
 	}
 body {
