@@ -50,7 +50,7 @@ html, body {
 }
 
 body {
-	background-color: #F8F6F8;
+	background-image: blue;
 }
 
 p {
@@ -66,18 +66,4 @@ p {
 }
 .page-name-large {
 	font-size: 3.4em;
-}
-
-/*videos*/
-html, body {
-	padding:0;
-}
-.subMenu ul{
-	 list-style-type: none;
-	 font-size: 22px;
-	 text-decoration: none;
-}
-.title{
-	font-size: 30px;
-
 }
