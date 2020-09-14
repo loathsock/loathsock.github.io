@@ -1,28 +1,83 @@
 /*Homepage*/
-
-.header {
-	
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti');
 
 
+* {
+	box-sizing: border-box;
+}
 
-	}
+html, body {
+  padding:0;
+	padding:0;
+}
 
-.logomenu {
-
-	}
 
 .homelogo {
     padding-bottom: 0;
 }
 
 .menu {
-	padding-top: -1px ;
-	padding: -1px;
+	  word-spacing: 18px;
+	  padding-top: -1px ;
+	  padding: -1px;
     text-align: center;
-    border-bottom: 1px solid gray;
-    border-top: 1px solid gray;
-		width: 70%;
+    border-bottom: 1.2px solid gray;
+    border-top: 1.2px solid gray;
+		width: 100%;
+
+
 	}
+	.menu li {
+		padding: 0, 20%;
+		display: inline;
+
+	}
+	.menu ul {
+		 list-style-type: none;
+
+	}
+
+.menu a {
+	font-size: 25px;
+	display: inline-block;
+	padding: 0.1em;
+	color: #040678;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	color: #8a0e00;
+}
+
 body {
-	background-color: #F8F8F8;
+	background-color: #F8F6F8;
+}
+
+p {
+ font-size:22px;
+ text-align: justify;
+}
+.page-name {
+	font-family: 'Calligraffitti';
+	font-size: 3.5em;
+	text-align: center;
+	margin-top: 1%;
+	font-weight:bolder;
+}
+.page-name-large {
+	font-size: 3.4em;
+}
+
+/*videos*/
+html, body {
+	padding:0;
+}
+.subMenu ul{
+	 list-style-type: none;
+	 font-size: 22px;
+	 text-decoration: none;
+}
+.title{
+	font-size: 30px;
+
 }

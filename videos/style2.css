@@ -1,0 +1,26 @@
+html, body {
+	padding:0;
+}
+.subMenu li{
+	 list-style-type: circle;
+	 font-size: 22px;
+	 text-decoration;
+
+	 font-size: 26px;
+	 margin: 8px;
+	 }
+
+
+.subMenu  a {
+	text-decoration: none;
+  padding: 0.1em;
+}
+.subMenu  a:hover {
+	text-decoration:underline;
+	color: gray;
+}
+
+.title{
+	font-size: 28px;
+	font-family: helvetica;
+}
