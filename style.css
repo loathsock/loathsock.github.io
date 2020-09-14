@@ -6,10 +6,7 @@
 	box-sizing: border-box;
 }
 
-html, body {
-  padding:0;
-	padding:0;
-}
+
 
 
 .homelogo {
@@ -50,7 +47,8 @@ html, body {
 }
 
 body {
-	background-image: blue;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(80,0,36,.66) 0%, rgba(250,23,34,.66) 0%, rgba(255,180,0,.66) 0%, rgba(254,208,97,.66) 5%, rgba(237,242,240,.66) 67%);
 }
 
 p {
