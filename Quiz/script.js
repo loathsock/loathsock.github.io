@@ -52,9 +52,10 @@
             option.onclick =  () => {
               showCorrectOrFalse.style.fontSize = '30px'
               showCorrectOrFalse.style.margin = '30px'
-              score++
+              
 
                if(option.innerText == correctAnswer) {
+                score++
                 removeOptionButton() 
                 changeInnerDisplay.innerHTML = ''
                 document.body.style.backgroundColor = 'rgb(33, 216, 73)'
