@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.options {
+  border-radius: .7rem;
+  font-size: 22px;
+  padding: 12px;
+  margin: 8px;
+}
+.next {
+  border-radius: .0;
+  font-size: 22px;
+  padding: 8px;
+  margin: 80px; 
+}
+
+.show {
+  border-radius: .0;
+  font-size: 22px;
+  color: rgb(33, 216, 73);
+}
+
+.myStyle {
+  font-size: 1.9rem;
+  font-weight: bold;
+  text-justify: distribute;
+  font-family: 'Times New Roman', Times, serif;
+}
