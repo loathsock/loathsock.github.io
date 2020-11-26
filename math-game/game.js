@@ -67,8 +67,7 @@ function generateMathProblem(){
         if(counter == 10) {
           let end = new Date().getTime()
           let res =  end - start 
-          time.innerHTML = `Completed in ${res/1000}`
-          console.log('it took: ' + (res/1000) +' seconds');
+          time.innerHTML = `Completed in ${res/1000} seconds`
           winMessage.style.display = 'flex'
           winMessage.classList.add('win-message')
         }     
