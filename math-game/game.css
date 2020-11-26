@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background: linear-gradient(to left, #333, rgb(116, 106, 106) 50%, rgba(240, 108, 108) 75%, rgba(240, 108, 108) 75%);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.operation{
+    color: white;
+    position: absolute;
+    margin-top: 70px ;
+    margin: auto;
+    width: 300px;
+    height: 80px;
+    line-height: 100px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid rgb(255, 255, 255);
+}
+#span {
+    position: absolute;
+    text-align: center;
+    font-size: 38px;
+    top: -10px;
+    left: 105px;
+}
+
+.options{
+    text-align: center;
+    margin-top: 190px;   
+}
+
+.option-btn{
+    margin: 6px;
+    cursor: pointer;
+    width: 110px;
+    height: 40px;
+   font-size: 28px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   border: 1.5px solid rgb(211, 211, 211);
+   border-radius: 1.8px;
+
+}
+.option-btn:hover {
+    background-color: rgb(187, 183, 183);
+}
+
+.count{
+    border: 2px solid rgb(97, 95, 95);
+    border-radius: 10px;
+    margin: 200px auto;
+    justify-content: center;
+    background-color: rgb(26, 163, 241);
+    width:100px;
+    height: 40px;
+    font-size: 22px;
+    font-weight: 90%;
+    text-align: center;
+}
+.win-message{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.win-message button {
+    font-size: 2.5rem;
+    padding: .25em .3em;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.win-message .winText{
+    padding-right: 1rem;
+    color: white;
+    font-size: 3.2rem ;
+}
+.win{
+    display: none;
+}
+
+
+@keyframes success {
+    from {background-color: rgb(26, 163, 241);}
+    to {background-color:  #52e78b;}
+  }
+
+  @keyframes failure {
+    from {background-color: rgb(26, 163, 241);}
+    to {background-color:  rgb(255, 51, 0);}
+  }
+
+
+.animS {
+    animation-name: success;
+    animation-duration: 1.5s;
+    animation-delay: -1s;
+}
+
+.animF{
+    animation-name: failure;
+    animation-duration: 1.5s;
+    animation-delay: -1s;
+}
+
