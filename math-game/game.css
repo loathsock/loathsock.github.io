@@ -66,6 +66,8 @@ body{
     text-align: center;
 }
 .win-message{
+    flex-wrap: wrap;
+    flex-direction: row;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -83,12 +85,21 @@ body{
     cursor: pointer;
 }
 .win-message .winText{
-    padding-right: 1rem;
+    padding-right: .4rem;
     color: white;
     font-size: 3.2rem ;
 }
 .win{
     display: none;
+}
+.time {
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: fixed;
+    top: 60%;
+    font-size: 2.7rem;
+    color: white;
+         
 }
 
 

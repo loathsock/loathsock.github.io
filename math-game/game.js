@@ -5,6 +5,7 @@ const winMessage = document.querySelector('.win')
 const audioError = new Audio('error.mp3')
 const audioCorrect = new Audio('476178__unadamlar__correct-choice.wav')
 let counter = 0
+let start = new Date().getTime()
 restartGame()
 generateMathProblem()
 
@@ -30,7 +31,9 @@ function shuffle(array) {
 
 
 function generateMathProblem(){
+     
       let myCounter = document.getElementById('counter')
+      let time = document.querySelector('.time-span')
       myCounter.innerHTML = counter
       const numOne = Math.floor(Math.random() *11) +1
       const numTwo = Math.floor(Math.random() *11) +1
@@ -43,24 +46,29 @@ function generateMathProblem(){
       const randomVarNumTwo = Math.floor(Math.random()* 44) +1 
       const optionsArray = [ randomVarNumTwo, evaluted + 1, randomVarNum, evaluted] 
       shuffle(optionsArray)
+     
 
-  questionDisplay.innerHTML =  question
-   options.innerHTML = ''
-  for (let option of optionsArray){
-    options.innerHTML += `<button class = "option-btn"> ${option}</button>`
-  } 
-  document.querySelectorAll('.option-btn').forEach(element => {
-    element.onclick = () => {
-      if(count.classList.contains('animS') || count.classList.contains('animF')) {
-        count.classList.remove('animS', 'animF')
-      }
+    questionDisplay.innerHTML =  question
+    options.innerHTML = ''
+    for (let option of optionsArray){
+      options.innerHTML += `<button class = "option-btn"> ${option}</button>`
+    } 
+    document.querySelectorAll('.option-btn').forEach(element => {
+      element.onclick = () => {
+        if(count.classList.contains('animS') || count.classList.contains('animF')) {
+          count.classList.remove('animS', 'animF')
+        }
       
       if(element.innerText == evaluted) {
         audioCorrect.play()
         count.classList.add('animS')
        counter++
         generateMathProblem() 
-        if(counter == 6) {
+        if(counter == 10) {
+          let end = new Date().getTime()
+          let res =  end - start 
+          time.innerHTML = `Completed in ${res/1000}`
+          console.log('it took: ' + (res/1000) +' seconds');
           winMessage.style.display = 'flex'
           winMessage.classList.add('win-message')
         }     
@@ -82,11 +90,7 @@ function generateMathProblem(){
 function restartGame(){
   const restartButton = document.getElementById('restart')
   restartButton.addEventListener('click', ()=>{
-    counter = 0
-    generateMathProblem()
-    winMessage.classList.remove('win-message')
-    winMessage.style.display = 'none'
-    
+    location.reload()
     
   })
 }
