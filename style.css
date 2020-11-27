@@ -4,64 +4,48 @@
 
 * {
 	box-sizing: border-box;
+	background-image: url('bkg.jpg');
+	background-size: 1500px;
+	height: 100px
 }
 
 
 
 
-.homelogo {
-    padding-bottom: 0;
+header{
+	display: flex;
+	margin: auto;
+	width: 100%;
 }
 
 .menu {
-	  word-spacing: 18px;
-	  padding-top: -1px ;
-	  padding: -1px;
-    text-align: center;
-    border-bottom: 1.2px solid gray;
-    border-top: 1.2px solid gray;
-		width: 100%;
+	word-spacing: 68px;
+	padding-top: -1px ;
+	padding: -1px;
+	text-align: center;
+	width: 100%;
+}
 
-
-	}
-	.menu li {
-		padding: 0, 20%;
-		display: inline;
-
-	}
-	.menu ul {
-		 list-style-type: none;
-
-	}
+.menu li {
+	padding: 0, 20%;
+	display: inline;
+	color: black;
+}
 
 .menu a {
 	font-size:23px;
 	display: inline-block;
 	padding: 0.1em;
-	color: #040678;
+	color: #272626;
 	text-decoration: none;
 }
 
 .menu a:hover {
-	color: #8a0e00;
+	color: #b4afaf;
 }
 
 body {
-	background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgba(80,0,36,.66) 0%, rgba(250,23,34,.66) 0%, rgba(255,180,0,.66) 0%, rgba(254,208,97,.66) 5%, rgba(237,242,240,.66) 67%);
+	font-family: 'Poppins', sans-serif;
+
 }
 
-p {
- font-size:22px;
- text-align: justify;
-}
-.page-name {
-	font-family: 'Calligraffitti';
-	font-size: 3.5em;
-	text-align: center;
-	margin-top: 1%;
-	font-weight:bolder;
-}
-.page-name-large {
-	font-size: 3.4em;
-}
