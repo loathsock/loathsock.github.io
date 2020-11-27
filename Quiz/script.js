@@ -27,13 +27,13 @@
         } ,
 
         {
-            question: "What is the first commercially avialable programming language?",
+            question: "What was the first commercially avialable programming language?",
             options: ['C', 'Lisp', 'Assembly', 'Fortran'],
             correct: 'Fortran'
         },
 
         {
-            question: "Who is the worst president of the United States Of America",
+            question: "Who was the worst president of the United States Of America",
             options: ['Ronald Reagan', 'Barack Obama', 'Sleepy Joe', 'Donald Trump'],
             correct: 'Donald Trump'
         } 

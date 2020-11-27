@@ -5,12 +5,14 @@ body {
     font-weight: bold;
 }
 .options {
+  cursor: pointer;
   border-radius: .7rem;
   font-size: 22px;
   padding: 12px;
   margin: 8px;
 }
 .next {
+  cursor: pointer;
   border-radius: .0;
   font-size: 22px;
   padding: 8px;
