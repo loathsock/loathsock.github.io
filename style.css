@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 	background-image: url('bkg.jpg');
 	background-size: 1500px;
-	height: 100px
+	height: auto;
 }
 
 
@@ -19,7 +19,8 @@ header{
 }
 
 .menu {
-	word-spacing: 68px;
+	padding-right: 22px ;
+	word-spacing: 34px;
 	padding-top: -1px ;
 	padding: -1px;
 	text-align: center;
@@ -27,7 +28,6 @@ header{
 }
 
 .menu li {
-	padding: 0, 20%;
 	display: inline;
 	color: black;
 }
