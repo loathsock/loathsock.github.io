@@ -1,52 +1,129 @@
-/*Homepage*/
-@import url('https://fonts.googleapis.com/css?family=Calligraffitti');
-
-
-* {
-	box-sizing: border-box;
-	background-image: url('bkg.jpg');
-	background-size: 1500px;
-	height: auto;
-}
-
-
-
-
-header{
-	padding-top: 25px;
-	display: flex;
-	margin: auto;
-	width: 100%;
-}
-
-.menu {
-	padding-right: 22px ;
-	word-spacing: 34px;
-	padding-top: -1px ;
-	padding: -1px;
-	text-align: center;
-	width: 100%;
-}
-
-.menu li {
-	display: inline;
-	color: black;
-}
-
-.menu a {
-	font-size:23px;
-	display: inline-block;
-	padding: 0.1em;
-	color: #272626;
-	text-decoration: none;
-}
-
-.menu a:hover {
-	color: #b4afaf;
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
+    background-image: url('bkg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 
 }
 
+nav {
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+	background-color:#5c5a57;
+	
+}
+
+.logo {
+    color: rgb(235, 235, 235);
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+
+.content h4{
+	display: none;
+}
+
+
+
+.slide div {
+    width: 22px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+.slide{
+    display: none;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .nav-links {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+	body{
+		overflow-x: hidden ;
+	}
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #967488;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+		width: 70%;
+		transform: translate(100%);   
+	}
+	.transform {
+		   transition: transform .25s ease-in ;
+	}
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-active{
+        transform: translate(0%);
+    }
+    .slide{
+        display: block;
+    }
+}
+
+@keyframes navlinkFade{
+    from {
+        opacity:0;
+        transform: translate(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+
+    }
+}
+
+.toggle .line-one{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line-two{
+    opacity: 0;
+  }
+
+.toggle .line-three{
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
