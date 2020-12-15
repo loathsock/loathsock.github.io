@@ -6,9 +6,10 @@
 }
 
 body {
-    background-image: url('bkg.jpg');
+   background-image: url('bkg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh ;
     overflow: hidden;
 
 }
@@ -74,7 +75,8 @@ nav {
 @media screen and (max-width: 720px) {
 	body{
 		overflow-x: hidden ;
-	}
+        min-height: 100vh ;
+  	}
     .nav-links {
         position: absolute;
         right: 0px;
